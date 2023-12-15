@@ -1,0 +1,7 @@
+/* the module css file must be created in this format only. */
+/* advantage of using css modules is that the classes are locally scoped. */
+/* i.e because we reference the class names using the styles variable, it can't be used on the children component.*/
+
+.success {
+  color: green;
+}

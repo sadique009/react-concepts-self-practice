@@ -9,6 +9,15 @@ import DocTitleOne from "./components/CustomHooks/DocTitleOne";
 import DocTitleTwo from "./components/CustomHooks/DocTitleTwo";
 import Counter1 from "./components/CustomHooks/Counter1";
 import Counter2 from "./components/CustomHooks/Counter2";
+import UserForm from "./components/CustomHooks/UserForm";
+import UserGreeting from "./components/ConditionalRendering/UserGreeting";
+import Stylesheet from "./components/StylingMethods/Stylesheet";
+import Inline from "./components/StylingMethods/Inline";
+import NameList from "./components/ListRendering/NameList";
+
+// module stylesheet is imported like this.
+import styles from "./components/StylingMethods/appStyles.module.css";
+import "./components/StylingMethods/appStyles.css";
 
 const App = () => {
   return (
@@ -26,8 +35,18 @@ const App = () => {
       <DocTitleOne />
       <DocTitleTwo /> */}
 
-      <Counter1 />
-      <Counter2 />
+      {/* <Counter1 />
+      <Counter2 /> */}
+
+      {/* <UserForm /> */}
+
+      {/* <UserGreeting /> */}
+
+      {/* <Stylesheet primary={true} /> */}
+      {/* <Inline /> */}
+      {/* <h1 className="error">error</h1>
+      <h1 className={styles.success}>success</h1> */}
+      <NameList />
     </>
   );
 };

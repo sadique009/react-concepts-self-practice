@@ -1,20 +1,8 @@
 import React, { useState } from "react";
+import useCounter from "./useCounter";
 
 const Counter1 = () => {
-  const [count, setCount] = useState(0);
-
-  const incr = () => {
-    setCount((prevCount) => prevCount + 1);
-  };
-
-  const decr = () => {
-    setCount((prevCount) => prevCount - 1);
-  };
-
-  const reset = () => {
-    setCount(0);
-  };
-
+  const [count, incr, decr, reset] = useCounter(0, 2);
   return (
     <div>
       <h2>count={count}</h2>
