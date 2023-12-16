@@ -14,7 +14,8 @@ import UserGreeting from "./components/ConditionalRendering/UserGreeting";
 import Stylesheet from "./components/StylingMethods/Stylesheet";
 import Inline from "./components/StylingMethods/Inline";
 import NameList from "./components/ListRendering/NameList";
-
+import Welcome from "./components/ClassComponents/Welcome";
+import LifecycleA from "./components/ClassComponents/LifecycleA";
 // module stylesheet is imported like this.
 import styles from "./components/StylingMethods/appStyles.module.css";
 import "./components/StylingMethods/appStyles.css";
@@ -46,7 +47,9 @@ const App = () => {
       {/* <Inline /> */}
       {/* <h1 className="error">error</h1>
       <h1 className={styles.success}>success</h1> */}
-      <NameList />
+      {/* <NameList /> */}
+      {/* <Welcome/> */}
+      <LifecycleA />
     </>
   );
 };
