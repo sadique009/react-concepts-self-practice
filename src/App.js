@@ -19,6 +19,8 @@ import LifecycleA from "./components/ClassComponents/LifecycleA";
 // module stylesheet is imported like this.
 import styles from "./components/StylingMethods/appStyles.module.css";
 import "./components/StylingMethods/appStyles.css";
+import CounterEg from "./components/useStateHooks/CounterEg";
+import DataList from "./components/useStateHooks/DataList";
 
 const App = () => {
   return (
@@ -30,6 +32,9 @@ const App = () => {
       {/* <PortalDemo/> */}
 
       {/* <ParentComponent /> */}
+
+      {/* <CounterEg /> */}
+      <DataList />
       {/* 
       <Counter /> */}
       {/* 
@@ -49,7 +54,7 @@ const App = () => {
       <h1 className={styles.success}>success</h1> */}
       {/* <NameList /> */}
       {/* <Welcome/> */}
-      <LifecycleA />
+      {/* <LifecycleA /> */}
     </>
   );
 };

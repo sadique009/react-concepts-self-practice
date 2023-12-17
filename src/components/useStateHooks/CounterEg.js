@@ -1,8 +1,11 @@
+// devsnest lecs.
+// revised- 1,
+
 import React, { useState } from "react";
 
-function Counter() {
+function CounterEg() {
   const [count, setCount] = useState(0);
-  console.log("counter rendered", count)
+  console.log("counter rendered", count);
 
   const handleClick = () => {
     // each render is associated with a particular state.
@@ -13,19 +16,23 @@ function Counter() {
   };
 
   // updater fn. it uses callback fn as parameter.
+  // (prevCount is callback fn here.)
   // here, the state is continuously changed.
   // this helps in performance optimization.
-  const handleClick1 = () => {
-    setCount((prevCount) => prevCount + 1); // 0+1=1
-    setCount((prevCount) => prevCount + 1); // 1+1=2
-    setCount((prevCount) => prevCount + 1); // 2+1=3
-    console.log("after click", count)
-  };
+
+  // const handleClick1 = () => {
+  //   setCount((prevCount) => prevCount + 1); // 0+1=1
+  //   setCount((prevCount) => prevCount + 1); // 1+1=2
+  //   setCount((prevCount) => prevCount + 1); // 2+1=3
+  //   console.log("after click", count);
+  // };
+
   return (
     <div>
-      <button onClick={handleClick1}>count : {count} </button>
+      {/* <button onClick={handleClick1}>count : {count} </button> */}
+      <button onClick={handleClick}>count : {count} </button>
     </div>
   );
 }
 
-export default Counter;
+export default CounterEg;
