@@ -25,6 +25,10 @@ import AppEg from "./components/useEffectHooks/AppEg";
 import UseRefBasic from "./components/useRefHook/UseRefBasic";
 import UseRefFocus from "./components/useRefHook/UseRefFocus";
 import UseReducer from "./components/useReducerHook/UseReducer";
+import CounterOne from "./components/useReducerHook2/CounterOne";
+import CounterTwo from "./components/useReducerHook2/CounterTwo";
+import CounterThree from "./components/useReducerHook2/CounterThree";
+import Hero from "./components/useReducerHook2/Hero";
 
 const App = () => {
   return (
@@ -43,6 +47,11 @@ const App = () => {
       {/* <UseRefBasic />
       <UseRefFocus /> */}
       {/* <UseReducer /> */}
+      {/* 
+      <CounterOne /> */}
+      {/* <CounterTwo /> */}
+      {/* <CounterThree /> */}
+      <Hero />
       {/* 
       <Counter /> */}
       {/* 
