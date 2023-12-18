@@ -1,3 +1,6 @@
+// devsnest lecs.
+// revised 1,
+
 import React, { useState, useEffect } from "react";
 
 function ProductApi() {
@@ -19,9 +22,9 @@ function ProductApi() {
   function getProductByCategory() {
     fetch(`https://fakestoreapi.com/products/category/${selectedCategory}`)
       .then((res) => res.json())
-      .then((products) => {
-        console.log("products fetched", products);
-        setItems(products);
+      .then((prods) => {
+        console.log("products fetched", prods);
+        setItems(prods);
       });
   }
   //   console.log(categories);

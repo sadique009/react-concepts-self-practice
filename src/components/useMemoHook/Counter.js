@@ -1,4 +1,8 @@
-// the basic difference b/w useCallback and useMemo is that useCallback caches the provided fn instance itself whereas useMemo invokes the provided fn and caches its result.
+// codevolution lecs.
+// revised 1, 
+
+// the basic difference b/w useCallback and useMemo is that useCallback caches the provided fn instance itself,
+// whereas useMemo invokes the provided fn and caches its result.
 // cache a fn-  useCallback
 // cache the result of an invoked fn- useMemo
 

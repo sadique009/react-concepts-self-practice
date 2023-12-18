@@ -1,3 +1,6 @@
+// devsnest lecs.
+// revised 1,
+
 import React, { useState, useEffect } from "react";
 
 // we use this hook when we want our component to be notified of changes external to the ui.
@@ -8,7 +11,7 @@ function UseEffectExample() {
 
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
 
-  // useEffect accepts a setup fn and a dependency array.
+  // useEffect accepts a setter fn and a dependency array.
   useEffect(() => {
     const handleMove = (e) => {
       setCursor({ x: e.clientX, y: e.clientY });

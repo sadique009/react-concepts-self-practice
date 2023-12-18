@@ -21,6 +21,10 @@ import styles from "./components/StylingMethods/appStyles.module.css";
 import "./components/StylingMethods/appStyles.css";
 import CounterEg from "./components/useStateHooks/CounterEg";
 import DataList from "./components/useStateHooks/DataList";
+import AppEg from "./components/useEffectHooks/AppEg";
+import UseRefBasic from "./components/useRefHook/UseRefBasic";
+import UseRefFocus from "./components/useRefHook/UseRefFocus";
+import UseReducer from "./components/useReducerHook/UseReducer";
 
 const App = () => {
   return (
@@ -34,7 +38,11 @@ const App = () => {
       {/* <ParentComponent /> */}
 
       {/* <CounterEg /> */}
-      <DataList />
+      {/* <DataList /> */}
+      {/* <AppEg/> */}
+      {/* <UseRefBasic />
+      <UseRefFocus /> */}
+      {/* <UseReducer /> */}
       {/* 
       <Counter /> */}
       {/* 
