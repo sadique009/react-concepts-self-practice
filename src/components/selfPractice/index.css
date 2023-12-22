@@ -1,0 +1,82 @@
+.job-detail-title {
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.job-detail-box-2 {
+  display: flex;
+  flex: 2 1;
+  flex-direction: column;
+  padding: 24px;
+}
+.job-detail-and-budget-box {
+  display: flex;
+  column-gap: 12px;
+  padding: 24px;
+}
+
+.job-detail-box {
+  display: flex;
+  flex-basis: 921px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.job-criteria-box {
+  display: flex;
+  column-gap: 28px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.job-detail-project-size {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin-top: 3px;
+}
+.attachment-box {
+  display: flex;
+  margin-top: 12px;
+  column-gap: 24px;
+}
+.attachment-content {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.avatar-container {
+  width: 28px !important;
+  height: 28px !important;
+  background-color: #ffffff !important;
+  border: 2px solid #14a800;
+}
+.avatar-container-small {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #14a800;
+}
+.chip-box {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  column-gap: 8px;
+}
+.caption {
+  color: rgba(0, 0, 0, 0.38);
+}
+.desc {
+  color: rgba(0, 0, 0, 0.6);
+}
+.job-description-box {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.budget-text {
+  color: #14a800;
+}
+.job-detail-skill-box {
+  padding: 24px;
+}

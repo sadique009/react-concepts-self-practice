@@ -20,6 +20,7 @@ import LifecycleA from "./components/ClassComponents/LifecycleA";
 import styles from "./components/StylingMethods/appStyles.module.css";
 import "./components/StylingMethods/appStyles.css";
 import CounterEg from "./components/useStateHooks/CounterEg";
+import CounterEg2 from "./components/useStateHooks/CounterEg2";
 import DataList from "./components/useStateHooks/DataList";
 import AppEg from "./components/useEffectHooks/AppEg";
 import UseRefBasic from "./components/useRefHook/UseRefBasic";
@@ -33,7 +34,8 @@ import Hero from "./components/useReducerHook2/Hero";
 const App = () => {
   return (
     <>
-      {/* if we try to pass down a prop in ClickCounter component from here, it won't work because the prop is passed down to the hoc and not to the ClickCounter component.  */}
+      {/* if we try to pass down a prop in ClickCounter component from here,
+       it won't work because the prop is passed down to the hoc and not to the ClickCounter component.  */}
       {/* <ClickCounter name="msn" />;
       <HoverCounter /> */}
 
@@ -51,13 +53,13 @@ const App = () => {
       <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
-      <Hero />
+      {/* <Hero /> */}
       {/* 
       <Counter /> */}
       {/* 
       <DocTitleOne />
       <DocTitleTwo /> */}
-
+      <CounterEg2 />
       {/* <Counter1 />
       <Counter2 /> */}
 

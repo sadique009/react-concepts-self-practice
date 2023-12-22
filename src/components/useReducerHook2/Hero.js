@@ -43,8 +43,8 @@ function Hero() {
         {/* <ComponentA />
         <ComponentD />
         <ComponentF /> */}
-        <DataFetchingOne />
-        {/* <DataFetchingTwo /> */}
+        {/* <DataFetchingOne /> */}
+        <DataFetchingTwo />
       </div>
     </CountContext.Provider>
   );
