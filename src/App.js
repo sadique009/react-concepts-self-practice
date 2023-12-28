@@ -30,6 +30,8 @@ import CounterOne from "./components/useReducerHook2/CounterOne";
 import CounterTwo from "./components/useReducerHook2/CounterTwo";
 import CounterThree from "./components/useReducerHook2/CounterThree";
 import Hero from "./components/useReducerHook2/Hero";
+import UseStateObj from "./components/useStateHooks/UseStateObj";
+import UseStateArr from "./components/useStateHooks/UseStateArr";
 
 const App = () => {
   return (
@@ -43,7 +45,7 @@ const App = () => {
 
       {/* <ParentComponent /> */}
 
-      {/* <CounterEg /> */}
+      <CounterEg />
       {/* <DataList /> */}
       {/* <AppEg/> */}
       {/* <UseRefBasic />
@@ -59,9 +61,12 @@ const App = () => {
       {/* 
       <DocTitleOne />
       <DocTitleTwo /> */}
-      <CounterEg2 />
+      {/* <CounterEg2 /> */}
       {/* <Counter1 />
       <Counter2 /> */}
+
+      {/* <UseStateObj /> */}
+      {/* <UseStateArr /> */}
 
       {/* <UserForm /> */}
 

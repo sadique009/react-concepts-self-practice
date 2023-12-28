@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 
+// useEffect runs after every render of the component with dependency array.
 // we use this hook when we want our component to be notified of changes external to the ui.
 // eg, api calls, events happening on the window. eg. movement of mouse.
 
@@ -24,7 +25,14 @@ function UseEffectExample() {
 
     // cleanup fn.
     // it triggers when the component is unmounted.
-    return window.removeEventListener("pointermove", handleMove);
+    // when we unmount a component, make sure to cancel all subscriptions and listeners.
+
+    // return window.removeEventListener("pointermove", handleMove);
+
+    return () => {
+      console.log("component unmounting code");
+      window.removeEventListener("pointermove", handleMove);
+    };
   }, []);
 
   return (

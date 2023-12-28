@@ -1,12 +1,20 @@
 // devsnest lecs.
 // revised- 1,
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function CounterEg() {
   const [count, setCount] = useState(0);
+  const [name, setName] = useState("");
   console.log("counter rendered", count);
 
+  useEffect(() => {
+    console.log("updating doc title");
+    document.title = `you clicked ${count} times.`;
+    // inside the dependency array, we can specify either props or state that we need to watch for.
+    // if those props or states were to change, the effect would be executed.
+  }, [count]);
+  
   const handleClick = () => {
     // each render is associated with a particular state.
     // the state remains the same throughout the lifecycle of the render.
@@ -29,6 +37,11 @@ function CounterEg() {
 
   return (
     <div>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
       {/* <button onClick={handleClick1}>count : {count} </button> */}
       <button onClick={handleClick}>count : {count} </button>
     </div>

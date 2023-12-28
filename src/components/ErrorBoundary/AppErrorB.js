@@ -1,6 +1,4 @@
 import { Component, useState } from "react";
-import ContextEx from "./ContextEx";
-import CounterReducer from "./CounterReducer";
 import ToDoApp from "./ToDoApp";
 
 // in order to create error boundaries, we have to use class based components.
